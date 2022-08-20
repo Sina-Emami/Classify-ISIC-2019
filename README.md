@@ -22,8 +22,11 @@ Also, I used **signmoid** for the multi-class classification. When you use a sof
 
 </br>
 
+I wanted to compare the softmax and sigmoid for multi-class classification. **Softmax** is kind of Multi Class Sigmoid, but if you see the function of Softmax, the sum of all softmax units are supposed to be 1. In sigmoid it’s not really necessary. In the case of softmax, increasing the output value of one class makes the the others go down (sigma=1). To put it more simple, if there are multiple classes and each input can belong to exactly one class, then it absolutely makes sense to use softmax, in the other cases, sigmoid seems better. The softmax activation had a better result.
+</br>
+
 For the loss function I had chosen **categorical_crossentropy**.
 categorical_crossentropy: Used as a loss function for multi-class classification model where there are two or more output labels. The output label is assigned one-hot category encoding value in form of 0s and 1. The output label, if present in integer form, is converted into categorical encoding using keras.
 
 <h3>challenge:</h3>
-The most important challenge that I had faced was handling the overfitting problem. I had tried different **regularization** techniques so that I can overcome this issue. The combination of **L2(Ridge Regression)** and **Dropout** gave me the best result.
+The most important challenge that I had faced was handling the overfitting problem. I had tried different **regularization** techniques so that I can overcome this issue. The combination of **L2**(**Ridge Regression**) and **Dropout** gave me the best result.
