@@ -1,4 +1,4 @@
-# classify-ISIC-2019
+# Classify-ISIC-2019
 
 The goal for <a href="https://challenge.isic-archive.com/landing/2019/">ISIC 2019</a> is classify dermoscopic images among nine different diagnostic categories:
 
@@ -29,4 +29,4 @@ For the loss function I had chosen **categorical_crossentropy**.
 categorical_crossentropy: Used as a loss function for multi-class classification model where there are two or more output labels. The output label is assigned one-hot category encoding value in form of 0s and 1. The output label, if present in integer form, is converted into categorical encoding using keras.
 
 <h3>challenge:</h3>
-The most important challenge that I had faced was handling the overfitting problem. I had tried different **regularization** techniques so that I can overcome this issue. The combination of **L2**(**Ridge Regression**) and **Dropout** gave me the best result.
+The most important challenge that I had faced was handling the overfitting problem. I had tried different <strong>regularization</strong> techniques so that I can overcome this issue. The combination of <strong>L2(Ridge Regression)</strong> and <strong>Dropout</strong> gave me the best result.
